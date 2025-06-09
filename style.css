@@ -1,0 +1,158 @@
+/*centrar el texto y quitar estiilos de lista y links y colocar la posicion del contendio*/
+*{
+    text-align: center;
+    color: black;
+    list-style: none;
+    text-decoration: 0;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 12px;
+    font-size: 15px
+    
+    
+}
+
+
+nav ul{
+    width: 80%;
+    text-align: center;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 15px;
+    
+    
+}
+
+/*Aliniar el texto*/
+nav li{
+    display: inline-flex;
+    
+}
+
+/*Separar los link un del otro*/
+nav a{
+    width: 150px;
+    text-align: center;
+    
+}
+
+/*Añadirle efectos al menu inicial*/
+nav a:hover{
+    background-color: antiquewhite;
+    border-radius: 12px;
+}
+
+/*Anade estilo y separa el contendio*/
+.presentacion{
+    width: 60%;
+    background-color: grey;
+    border-radius: 15px;
+    margin-top: 50px;
+
+}
+/*ajustar tamaño de imagen*/
+.presentacion img{
+    width: 30%;
+    margin: auto;
+    border-radius: 150px;
+    justify-content: center;
+}
+
+/*animacion de imagen*/
+.presentacion img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.Habilidades{
+    width: 50%;
+    background-color: grey;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+/*Añadir color al texto h2*/
+.contenido h2{
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+/*centrar el contendio*/
+.contenido{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+/*añadir estilo y color*/
+.segundario{
+    width: 40%;
+    background-color: grey;
+    border-radius: 14px;
+}
+
+/*editar el tamaño de las imagenes*/
+.segundario img{
+    border-radius: 25px;
+    width: 80%;
+}
+
+.segundario img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+/*añadir estilo y color*/
+.segundario h2{
+    background-color: antiquewhite;
+    border-radius: 14px;
+
+}
+
+/*anadir fondo y color*/
+.contactos{
+    margin-top: 20px;
+    background-color: grey;
+    border-radius: 15px;
+}
+
+/*editar h2*/
+.contactos h2{
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+/*animacion*/
+.contactos a:hover{
+    background-color: rgba(38, 36, 48, 0.658);
+
+}
+.contactos a{
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+
+/*media disṕositivos moviles y tablets*/
+@media (min-width: 1200px) {
+body {
+    font-size: 16px;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+body {
+    font-size: 14px;
+
+}
+}
+
+
+@media (max-width: 767px) {
+body {
+    font-size: 12px;
+
+}
+}
+
