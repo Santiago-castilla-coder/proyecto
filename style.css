@@ -52,7 +52,7 @@ nav a:hover{
 }
 /*ajustar tamaño de imagen*/
 .presentacion img{
-    width: 30%;
+    width: 80%;
     margin: auto;
     border-radius: 150px;
     justify-content: center;
@@ -86,7 +86,7 @@ nav a:hover{
 
 /*añadir estilo y color*/
 .segundario{
-    width: 40%;
+    width: 70%;
     background-color: grey;
     border-radius: 14px;
 }
@@ -133,26 +133,33 @@ nav a:hover{
 }
 
 
-/*media disṕositivos moviles y tablets*/
-@media (min-width: 1200px) {
-body {
-    font-size: 16px;
-}
-}
 
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-body {
-    font-size: 14px;
+    .contenido {
+        flex-direction: column;
+    }
 
-}
-}
+    body {
+        font-size: 16px;
+    }
 
-
-@media (max-width: 767px) {
-body {
-    font-size: 12px;
-
-}
+    header h1 {
+        font-size: 26px;
+    }
 }
 
+
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
