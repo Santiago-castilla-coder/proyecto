@@ -3,7 +3,7 @@
     text-align: center;
     color: black;
     list-style: none;
-    text-decoration: 0;
+    text-decoration: none;
     flex-wrap: wrap;
     margin: auto;
     padding: 12px;
@@ -133,7 +133,7 @@ nav a:hover{
 }
 
 
-
+/*tablet*/
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     nav ul {
         flex-direction: column;
@@ -153,7 +153,7 @@ nav a:hover{
     }
 }
 
-
+/*pc*/
 @media only screen and (min-width: 1025px) {
     body {
         font-size: 18px;
@@ -161,5 +161,36 @@ nav a:hover{
 
     header h1 {
         font-size: 32px;
+    }
+}
+
+/*movil*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion,
+    .Habilidades,
+    .segundario {
+        width: 90%;
+    }
+
+    .contenido {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 22px;
     }
 }
